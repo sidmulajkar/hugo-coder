@@ -6,6 +6,9 @@
           {{ .Title }}
         </a>
       </h1>
+
+      {{ template "_internal/google_analytics_async.html" . }}
+
     </header>
 
     {{ .Content }}

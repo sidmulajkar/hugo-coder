@@ -6,7 +6,7 @@
         {{- print ": " -}}
       {{- end -}}
 
-      {{- i18n (lower .Title) | default .Title | title -}}
+      {{- .Title -}}
     </a>
   </h1>
   {{ .Content }}
