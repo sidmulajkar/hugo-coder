@@ -2,7 +2,17 @@
   {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
+
   <section class="container list">
+    <h3>Quick Search Points</h3>
+    
+    <a class="tags" href="{{ relref . "/tags/database" }}">DB Concepts</a> | 
+
+    <a class="tags" href="{{ relref . "/tags/linux" }}">Linux</a> |
+
+    <a class="tags" href="{{ relref . "/tags/privacy" }}">Privacy</a>
+
+
     <h1 class="title">
       <a class="title-link" href="{{ .Permalink | safeURL }}">
         {{ title (i18n (lower .Title)) | default .Title }}
